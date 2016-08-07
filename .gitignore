@@ -1,3 +1,92 @@
 ScratchingImageTableviews.xcodeproj/project.xcworkspace/xcuserdata/javiercalatravallaveria.xcuserdatad/UserInterfaceState.xcuserstate
 ScratchingImageTableviews.xcodeproj/xcuserdata/javiercalatravallaveria.xcuserdatad/xcschemes/ScratchingImageTableviews.xcscheme
 ScratchingImageTableviews.xcodeproj/xcuserdata/javiercalatravallaveria.xcuserdatad/xcschemes/xcschememanagement.plist
+contents.xcworkspacedata
+Podfile.lock
+Pods/Manifest.lock
+Pods/AFNetworking/LICENSE
+Pods/AFNetworking/README.md
+Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h
+Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.m
+Pods/AFNetworking/AFNetworking/AFNetworking.h
+Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h
+Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m
+Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h
+Pods/AFNetworking/AFNetworking/AFSecurityPolicy.m
+Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h
+Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.m
+Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h
+Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.m
+Pods/AFNetworking/AFNetworking/AFURLSessionManager.h
+Pods/AFNetworking/AFNetworking/AFURLSessionManager.m
+Pods/AFNetworking/UIKit+AFNetworking/AFAutoPurgingImageCache.h
+Pods/AFNetworking/UIKit+AFNetworking/AFAutoPurgingImageCache.m
+Pods/AFNetworking/UIKit+AFNetworking/AFImageDownloader.h
+Pods/AFNetworking/UIKit+AFNetworking/AFImageDownloader.m
+Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h
+Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m
+Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h
+Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m
+Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h
+Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.m
+Pods/AFNetworking/UIKit+AFNetworking/UIImage+AFNetworking.h
+Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h
+Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.m
+Pods/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h
+Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h
+Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.m
+Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h
+Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.m
+Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h
+Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.m
+Pods/Argo/LICENSE
+Pods/Argo/README.md
+Pods/Argo/Argo/Extensions/Dictionary.swift
+Pods/Argo/Argo/Extensions/NSNumber.swift
+Pods/Argo/Argo/Extensions/RawRepresentable.swift
+Pods/Argo/Argo/Functions/catDecoded.swift
+Pods/Argo/Argo/Functions/curry.swift
+Pods/Argo/Argo/Functions/decode.swift
+Pods/Argo/Argo/Functions/flatReduce.swift
+Pods/Argo/Argo/Functions/sequence.swift
+Pods/Argo/Argo/Operators/Argo.swift
+Pods/Argo/Argo/Operators/Decode.swift
+Pods/Argo/Argo/Resources/Argo.h
+Pods/Argo/Argo/Types/Decodable.swift
+Pods/Argo/Argo/Types/DecodeError.swift
+Pods/Argo/Argo/Types/JSON.swift
+Pods/Argo/Argo/Types/StandardTypes.swift
+Pods/Argo/Argo/Types/Decoded/Alternative.swift
+Pods/Argo/Argo/Types/Decoded/Applicative.swift
+Pods/Argo/Argo/Types/Decoded/Decoded.swift
+Pods/Argo/Argo/Types/Decoded/FailureCoalescing.swift
+Pods/Argo/Argo/Types/Decoded/Functor.swift
+Pods/Argo/Argo/Types/Decoded/Monad.swift
+Pods/Argo/Carthage/Checkouts/Runes/Source/Runes.swift
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Pods.xcodeproj/xcuserdata/javiercalatravallaveria.xcuserdatad/xcschemes/AFNetworking.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/javiercalatravallaveria.xcuserdatad/xcschemes/Argo.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/javiercalatravallaveria.xcuserdatad/xcschemes/Pods-ScratchingImageTableviews.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/javiercalatravallaveria.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/Target Support Files/AFNetworking/AFNetworking-dummy.m
+Pods/Target Support Files/AFNetworking/AFNetworking-prefix.pch
+Pods/Target Support Files/AFNetworking/AFNetworking-umbrella.h
+Pods/Target Support Files/AFNetworking/AFNetworking.modulemap
+Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig
+Pods/Target Support Files/AFNetworking/Info.plist
+Pods/Target Support Files/Argo/Argo-dummy.m
+Pods/Target Support Files/Argo/Argo-prefix.pch
+Pods/Target Support Files/Argo/Argo-umbrella.h
+Pods/Target Support Files/Argo/Argo.modulemap
+Pods/Target Support Files/Argo/Argo.xcconfig
+Pods/Target Support Files/Argo/Info.plist
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Info.plist
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-acknowledgements.markdown
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-acknowledgements.plist
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-dummy.m
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-frameworks.sh
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-resources.sh
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-umbrella.h
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.debug.xcconfig
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.modulemap
+Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.release.xcconfig

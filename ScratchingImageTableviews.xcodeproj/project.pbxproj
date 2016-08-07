@@ -12,9 +12,13 @@
 		5AB851481D5780850026013F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB851461D5780850026013F /* Main.storyboard */; };
 		5AB8514A1D5780850026013F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB851491D5780850026013F /* Assets.xcassets */; };
 		5AB8514D1D5780850026013F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB8514B1D5780850026013F /* LaunchScreen.storyboard */; };
+		CCB49AF1D7671DE95F806D54 /* Pods_ScratchingImageTableviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F5C8EA960C1117F214B830 /* Pods_ScratchingImageTableviews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00F5C8EA960C1117F214B830 /* Pods_ScratchingImageTableviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScratchingImageTableviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2699A04127BF3E774E5CDF67 /* Pods-ScratchingImageTableviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchingImageTableviews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.debug.xcconfig"; sourceTree = "<group>"; };
+		27EECBD186CED3FF238524B1 /* Pods-ScratchingImageTableviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchingImageTableviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.release.xcconfig"; sourceTree = "<group>"; };
 		5AB8513F1D5780850026013F /* ScratchingImageTableviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchingImageTableviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB851421D5780850026013F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AB851441D5780850026013F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB49AF1D7671DE95F806D54 /* Pods_ScratchingImageTableviews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				5AB851411D5780850026013F /* ScratchingImageTableviews */,
 				5AB851401D5780850026013F /* Products */,
+				91D3A6A8C5A8A20C4D26B5CF /* Pods */,
+				C37EBFF677A458273C7B0969 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ScratchingImageTableviews;
 			sourceTree = "<group>";
 		};
+		91D3A6A8C5A8A20C4D26B5CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2699A04127BF3E774E5CDF67 /* Pods-ScratchingImageTableviews.debug.xcconfig */,
+				27EECBD186CED3FF238524B1 /* Pods-ScratchingImageTableviews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C37EBFF677A458273C7B0969 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00F5C8EA960C1117F214B830 /* Pods_ScratchingImageTableviews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AB851511D5780850026013F /* Build configuration list for PBXNativeTarget "ScratchingImageTableviews" */;
 			buildPhases = (
+				36ECAB911C0306251BD7A6B8 /* 📦 Check Pods Manifest.lock */,
 				5AB8513B1D5780850026013F /* Sources */,
 				5AB8513C1D5780850026013F /* Frameworks */,
 				5AB8513D1D5780850026013F /* Resources */,
+				6B13FF05B9867D356D2A5063 /* 📦 Embed Pods Frameworks */,
+				F89A7EF46CC76D3EAA30F2E3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36ECAB911C0306251BD7A6B8 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B13FF05B9867D356D2A5063 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89A7EF46CC76D3EAA30F2E3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5AB8513B1D5780850026013F /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		5AB851521D5780850026013F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2699A04127BF3E774E5CDF67 /* Pods-ScratchingImageTableviews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScratchingImageTableviews/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		5AB851531D5780850026013F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27EECBD186CED3FF238524B1 /* Pods-ScratchingImageTableviews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScratchingImageTableviews/Info.plist;
@@ -288,6 +365,7 @@
 				5AB851531D5780850026013F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
