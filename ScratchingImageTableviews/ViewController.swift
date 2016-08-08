@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+/*
+ http://celeri.es/scratching_image_tableviews/IMG_2156.JPG
+     http://celeri.es/scratching_image_tableviews/landscapes
+ */
 }
 

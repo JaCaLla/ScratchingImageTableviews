@@ -6,7 +6,13 @@ target 'ScratchingImageTableviews' do
   use_frameworks!
 
   # Pods for ScratchingImageTableviews
-  pod 'AFNetworking', '~> 3.0'
   pod 'Argo'
+  pod 'AFNetworking', '~> 2.5'
+end
 
+target 'ScratchingImageTableviewsTests' do
+use_frameworks!
+
+  pod 'Argo'
+  pod 'AFNetworking', '~> 2.5'
 end

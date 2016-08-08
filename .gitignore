@@ -90,3 +90,24 @@ Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTab
 Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.debug.xcconfig
 Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.modulemap
 Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.release.xcconfig
+Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m
+Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h
+Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.m
+Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m
+Pods/AFNetworking/UIKit+AFNetworking/UIAlertView+AFNetworking.h
+Pods/AFNetworking/UIKit+AFNetworking/UIAlertView+AFNetworking.m
+Pods/Pods.xcodeproj/xcuserdata/javiercalatravallaveria.xcuserdatad/xcschemes/Pods-ScratchingImageTableviewsTests.xcscheme
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Info.plist
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests-acknowledgements.plist
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests-dummy.m
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests-frameworks.sh
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests-resources.sh
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests-umbrella.h
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests.debug.xcconfig
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests.modulemap
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests.release.xcconfig
+Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests-acknowledgements.markdown
+ScratchingImageTableviews.xcworkspace/xcuserdata/javiercalatravallaveria.xcuserdatad/UserInterfaceState.xcuserstate
+ScratchingImageTableviews.xcworkspace/xcuserdata/javiercalatravallaveria.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist

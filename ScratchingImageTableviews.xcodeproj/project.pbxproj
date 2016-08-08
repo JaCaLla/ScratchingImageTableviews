@@ -7,18 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BBF52B17932FA4EA52702ED /* Pods_ScratchingImageTableviewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD818F012C711BA14C30C8A6 /* Pods_ScratchingImageTableviewsTests.framework */; };
+		52B76F150B56C46B69852202 /* Pods_ScratchingImageTableviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF382D8E8AE579F6DCAC3EE1 /* Pods_ScratchingImageTableviews.framework */; };
+		5A38EF1A1D57B03600B42C67 /* ScratchingImageTableviewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF191D57B03600B42C67 /* ScratchingImageTableviewsTests.swift */; };
+		5A38EF261D57B64400B42C67 /* CUApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF231D57B64400B42C67 /* CUApiClient.swift */; };
+		5A38EF271D57B64400B42C67 /* CUApiClientResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF241D57B64400B42C67 /* CUApiClientResult.swift */; };
+		5A38EF281D57B64400B42C67 /* CUFixerApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF251D57B64400B42C67 /* CUFixerApiClient.swift */; };
+		5A38EF421D57C92B00B42C67 /* CUApiClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF411D57C92B00B42C67 /* CUApiClientTest.swift */; };
+		5A38EF441D57D6C000B42C67 /* Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF431D57D6C000B42C67 /* Landscape.swift */; };
+		5A38EF461D57D76900B42C67 /* Landscape+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF451D57D76900B42C67 /* Landscape+Decodable.swift */; };
+		5A38EF481D57E0F100B42C67 /* Landscapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF471D57E0F100B42C67 /* Landscapes.swift */; };
+		5A38EF4A1D57E16500B42C67 /* Landscapes+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF491D57E16500B42C67 /* Landscapes+Decodable.swift */; };
 		5AB851431D5780850026013F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB851421D5780850026013F /* AppDelegate.swift */; };
 		5AB851451D5780850026013F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB851441D5780850026013F /* ViewController.swift */; };
 		5AB851481D5780850026013F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB851461D5780850026013F /* Main.storyboard */; };
 		5AB8514A1D5780850026013F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB851491D5780850026013F /* Assets.xcassets */; };
 		5AB8514D1D5780850026013F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB8514B1D5780850026013F /* LaunchScreen.storyboard */; };
-		CCB49AF1D7671DE95F806D54 /* Pods_ScratchingImageTableviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F5C8EA960C1117F214B830 /* Pods_ScratchingImageTableviews.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5A38EF1C1D57B03600B42C67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AB851371D5780850026013F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AB8513E1D5780850026013F;
+			remoteInfo = ScratchingImageTableviews;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		00F5C8EA960C1117F214B830 /* Pods_ScratchingImageTableviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScratchingImageTableviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2699A04127BF3E774E5CDF67 /* Pods-ScratchingImageTableviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchingImageTableviews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.debug.xcconfig"; sourceTree = "<group>"; };
-		27EECBD186CED3FF238524B1 /* Pods-ScratchingImageTableviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchingImageTableviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.release.xcconfig"; sourceTree = "<group>"; };
+		08D0E11B4FB27F38CFBA6C22 /* Pods-ScratchingImageTableviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchingImageTableviews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.debug.xcconfig"; sourceTree = "<group>"; };
+		5A38EF171D57B03500B42C67 /* ScratchingImageTableviewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchingImageTableviewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A38EF191D57B03600B42C67 /* ScratchingImageTableviewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchingImageTableviewsTests.swift; sourceTree = "<group>"; };
+		5A38EF1B1D57B03600B42C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A38EF231D57B64400B42C67 /* CUApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUApiClient.swift; sourceTree = "<group>"; };
+		5A38EF241D57B64400B42C67 /* CUApiClientResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUApiClientResult.swift; sourceTree = "<group>"; };
+		5A38EF251D57B64400B42C67 /* CUFixerApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUFixerApiClient.swift; sourceTree = "<group>"; };
+		5A38EF411D57C92B00B42C67 /* CUApiClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CUApiClientTest.swift; path = API/CUApiClientTest.swift; sourceTree = "<group>"; };
+		5A38EF431D57D6C000B42C67 /* Landscape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Landscape.swift; path = Model/Landscape.swift; sourceTree = "<group>"; };
+		5A38EF451D57D76900B42C67 /* Landscape+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Landscape+Decodable.swift"; path = "Model/JSON/Landscape+Decodable.swift"; sourceTree = "<group>"; };
+		5A38EF471D57E0F100B42C67 /* Landscapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Landscapes.swift; path = Model/Landscapes.swift; sourceTree = "<group>"; };
+		5A38EF491D57E16500B42C67 /* Landscapes+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Landscapes+Decodable.swift"; path = "Model/JSON/Landscapes+Decodable.swift"; sourceTree = "<group>"; };
 		5AB8513F1D5780850026013F /* ScratchingImageTableviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchingImageTableviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB851421D5780850026013F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AB851441D5780850026013F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,27 +55,97 @@
 		5AB851491D5780850026013F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AB8514C1D5780850026013F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AB8514E1D5780850026013F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68A9E02A0B575D3A77628B56 /* Pods-ScratchingImageTableviewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchingImageTableviewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		882C48C514EE316EDAFE0FB3 /* Pods-ScratchingImageTableviewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchingImageTableviewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FD645E89605F8B893B9D2D6 /* Pods-ScratchingImageTableviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchingImageTableviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews.release.xcconfig"; sourceTree = "<group>"; };
+		AF382D8E8AE579F6DCAC3EE1 /* Pods_ScratchingImageTableviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScratchingImageTableviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD818F012C711BA14C30C8A6 /* Pods_ScratchingImageTableviewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScratchingImageTableviewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5A38EF141D57B03500B42C67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBF52B17932FA4EA52702ED /* Pods_ScratchingImageTableviewsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AB8513C1D5780850026013F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCB49AF1D7671DE95F806D54 /* Pods_ScratchingImageTableviews.framework in Frameworks */,
+				52B76F150B56C46B69852202 /* Pods_ScratchingImageTableviews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		399EF5E24D15EBCDB25A77BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF382D8E8AE579F6DCAC3EE1 /* Pods_ScratchingImageTableviews.framework */,
+				DD818F012C711BA14C30C8A6 /* Pods_ScratchingImageTableviewsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A38EF181D57B03600B42C67 /* ScratchingImageTableviewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A38EF3E1D57C89700B42C67 /* API */,
+				5A38EF191D57B03600B42C67 /* ScratchingImageTableviewsTests.swift */,
+				5A38EF1B1D57B03600B42C67 /* Info.plist */,
+			);
+			path = ScratchingImageTableviewsTests;
+			sourceTree = "<group>";
+		};
+		5A38EF211D57B06C00B42C67 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5A38EF231D57B64400B42C67 /* CUApiClient.swift */,
+				5A38EF241D57B64400B42C67 /* CUApiClientResult.swift */,
+				5A38EF251D57B64400B42C67 /* CUFixerApiClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		5A38EF221D57B08100B42C67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A38EF331D57B8B500B42C67 /* JSON */,
+				5A38EF431D57D6C000B42C67 /* Landscape.swift */,
+				5A38EF471D57E0F100B42C67 /* Landscapes.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5A38EF331D57B8B500B42C67 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				5A38EF451D57D76900B42C67 /* Landscape+Decodable.swift */,
+				5A38EF491D57E16500B42C67 /* Landscapes+Decodable.swift */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		5A38EF3E1D57C89700B42C67 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5A38EF411D57C92B00B42C67 /* CUApiClientTest.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		5AB851361D5780850026013F = {
 			isa = PBXGroup;
 			children = (
 				5AB851411D5780850026013F /* ScratchingImageTableviews */,
+				5A38EF181D57B03600B42C67 /* ScratchingImageTableviewsTests */,
 				5AB851401D5780850026013F /* Products */,
-				91D3A6A8C5A8A20C4D26B5CF /* Pods */,
-				C37EBFF677A458273C7B0969 /* Frameworks */,
+				E2FDB8EDC7B046389FA6865B /* Pods */,
+				399EF5E24D15EBCDB25A77BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5AB8513F1D5780850026013F /* ScratchingImageTableviews.app */,
+				5A38EF171D57B03500B42C67 /* ScratchingImageTableviewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +161,8 @@
 		5AB851411D5780850026013F /* ScratchingImageTableviews */ = {
 			isa = PBXGroup;
 			children = (
+				5A38EF221D57B08100B42C67 /* Model */,
+				5A38EF211D57B06C00B42C67 /* API */,
 				5AB851421D5780850026013F /* AppDelegate.swift */,
 				5AB851441D5780850026013F /* ViewController.swift */,
 				5AB851461D5780850026013F /* Main.storyboard */,
@@ -71,36 +173,51 @@
 			path = ScratchingImageTableviews;
 			sourceTree = "<group>";
 		};
-		91D3A6A8C5A8A20C4D26B5CF /* Pods */ = {
+		E2FDB8EDC7B046389FA6865B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2699A04127BF3E774E5CDF67 /* Pods-ScratchingImageTableviews.debug.xcconfig */,
-				27EECBD186CED3FF238524B1 /* Pods-ScratchingImageTableviews.release.xcconfig */,
+				08D0E11B4FB27F38CFBA6C22 /* Pods-ScratchingImageTableviews.debug.xcconfig */,
+				8FD645E89605F8B893B9D2D6 /* Pods-ScratchingImageTableviews.release.xcconfig */,
+				882C48C514EE316EDAFE0FB3 /* Pods-ScratchingImageTableviewsTests.debug.xcconfig */,
+				68A9E02A0B575D3A77628B56 /* Pods-ScratchingImageTableviewsTests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		C37EBFF677A458273C7B0969 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				00F5C8EA960C1117F214B830 /* Pods_ScratchingImageTableviews.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5A38EF161D57B03500B42C67 /* ScratchingImageTableviewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A38EF201D57B03600B42C67 /* Build configuration list for PBXNativeTarget "ScratchingImageTableviewsTests" */;
+			buildPhases = (
+				BF87AEF49022D1E91DC2C98B /* 📦 Check Pods Manifest.lock */,
+				5A38EF131D57B03500B42C67 /* Sources */,
+				5A38EF141D57B03500B42C67 /* Frameworks */,
+				5A38EF151D57B03500B42C67 /* Resources */,
+				F428E00FDF03B1D491BD32B5 /* 📦 Embed Pods Frameworks */,
+				8FC75CCE31D55CD062224766 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A38EF1D1D57B03600B42C67 /* PBXTargetDependency */,
+			);
+			name = ScratchingImageTableviewsTests;
+			productName = ScratchingImageTableviewsTests;
+			productReference = 5A38EF171D57B03500B42C67 /* ScratchingImageTableviewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5AB8513E1D5780850026013F /* ScratchingImageTableviews */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AB851511D5780850026013F /* Build configuration list for PBXNativeTarget "ScratchingImageTableviews" */;
 			buildPhases = (
-				36ECAB911C0306251BD7A6B8 /* 📦 Check Pods Manifest.lock */,
+				0486099012585774B8105CC9 /* 📦 Check Pods Manifest.lock */,
 				5AB8513B1D5780850026013F /* Sources */,
 				5AB8513C1D5780850026013F /* Frameworks */,
 				5AB8513D1D5780850026013F /* Resources */,
-				6B13FF05B9867D356D2A5063 /* 📦 Embed Pods Frameworks */,
-				F89A7EF46CC76D3EAA30F2E3 /* 📦 Copy Pods Resources */,
+				9F08CF9E3963F09B3AD6FD68 /* 📦 Embed Pods Frameworks */,
+				45C690F668D64463DAE255A3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -121,6 +238,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "JAVIER CALATRAVA LLAVERIA";
 				TargetAttributes = {
+					5A38EF161D57B03500B42C67 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5AB8513E1D5780850026013F;
+					};
 					5AB8513E1D5780850026013F = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -140,11 +261,19 @@
 			projectRoot = "";
 			targets = (
 				5AB8513E1D5780850026013F /* ScratchingImageTableviews */,
+				5A38EF161D57B03500B42C67 /* ScratchingImageTableviewsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5A38EF151D57B03500B42C67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AB8513D1D5780850026013F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,7 +287,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36ECAB911C0306251BD7A6B8 /* 📦 Check Pods Manifest.lock */ = {
+		0486099012585774B8105CC9 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -173,22 +302,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6B13FF05B9867D356D2A5063 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F89A7EF46CC76D3EAA30F2E3 /* 📦 Copy Pods Resources */ = {
+		45C690F668D64463DAE255A3 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,19 +317,103 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8FC75CCE31D55CD062224766 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F08CF9E3963F09B3AD6FD68 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScratchingImageTableviews/Pods-ScratchingImageTableviews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF87AEF49022D1E91DC2C98B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F428E00FDF03B1D491BD32B5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScratchingImageTableviewsTests/Pods-ScratchingImageTableviewsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5A38EF131D57B03500B42C67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A38EF1A1D57B03600B42C67 /* ScratchingImageTableviewsTests.swift in Sources */,
+				5A38EF421D57C92B00B42C67 /* CUApiClientTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AB8513B1D5780850026013F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5AB851451D5780850026013F /* ViewController.swift in Sources */,
+				5A38EF281D57B64400B42C67 /* CUFixerApiClient.swift in Sources */,
+				5A38EF441D57D6C000B42C67 /* Landscape.swift in Sources */,
+				5A38EF481D57E0F100B42C67 /* Landscapes.swift in Sources */,
+				5A38EF461D57D76900B42C67 /* Landscape+Decodable.swift in Sources */,
+				5A38EF261D57B64400B42C67 /* CUApiClient.swift in Sources */,
+				5A38EF271D57B64400B42C67 /* CUApiClientResult.swift in Sources */,
 				5AB851431D5780850026013F /* AppDelegate.swift in Sources */,
+				5A38EF4A1D57E16500B42C67 /* Landscapes+Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A38EF1D1D57B03600B42C67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AB8513E1D5780850026013F /* ScratchingImageTableviews */;
+			targetProxy = 5A38EF1C1D57B03600B42C67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5AB851461D5780850026013F /* Main.storyboard */ = {
@@ -237,6 +435,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5A38EF1E1D57B03600B42C67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882C48C514EE316EDAFE0FB3 /* Pods-ScratchingImageTableviewsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScratchingImageTableviewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jca.ScratchingImageTableviewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchingImageTableviews.app/ScratchingImageTableviews";
+			};
+			name = Debug;
+		};
+		5A38EF1F1D57B03600B42C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A9E02A0B575D3A77628B56 /* Pods-ScratchingImageTableviewsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScratchingImageTableviewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jca.ScratchingImageTableviewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchingImageTableviews.app/ScratchingImageTableviews";
+			};
+			name = Release;
+		};
 		5AB8514F1D5780850026013F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,7 +548,7 @@
 		};
 		5AB851521D5780850026013F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2699A04127BF3E774E5CDF67 /* Pods-ScratchingImageTableviews.debug.xcconfig */;
+			baseConfigurationReference = 08D0E11B4FB27F38CFBA6C22 /* Pods-ScratchingImageTableviews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScratchingImageTableviews/Info.plist;
@@ -336,7 +560,7 @@
 		};
 		5AB851531D5780850026013F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27EECBD186CED3FF238524B1 /* Pods-ScratchingImageTableviews.release.xcconfig */;
+			baseConfigurationReference = 8FD645E89605F8B893B9D2D6 /* Pods-ScratchingImageTableviews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScratchingImageTableviews/Info.plist;
@@ -349,6 +573,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5A38EF201D57B03600B42C67 /* Build configuration list for PBXNativeTarget "ScratchingImageTableviewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A38EF1E1D57B03600B42C67 /* Debug */,
+				5A38EF1F1D57B03600B42C67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5AB8513A1D5780850026013F /* Build configuration list for PBXProject "ScratchingImageTableviews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
