@@ -16,8 +16,7 @@
 		5A38EF421D57C92B00B42C67 /* CUApiClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF411D57C92B00B42C67 /* CUApiClientTest.swift */; };
 		5A38EF441D57D6C000B42C67 /* Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF431D57D6C000B42C67 /* Landscape.swift */; };
 		5A38EF461D57D76900B42C67 /* Landscape+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF451D57D76900B42C67 /* Landscape+Decodable.swift */; };
-		5A38EF481D57E0F100B42C67 /* Landscapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF471D57E0F100B42C67 /* Landscapes.swift */; };
-		5A38EF4A1D57E16500B42C67 /* Landscapes+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38EF491D57E16500B42C67 /* Landscapes+Decodable.swift */; };
+		5A71495B1D5A73D300E3F704 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A71495A1D5A73D300E3F704 /* ImageTableViewCell.swift */; };
 		5AB851431D5780850026013F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB851421D5780850026013F /* AppDelegate.swift */; };
 		5AB851451D5780850026013F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB851441D5780850026013F /* ViewController.swift */; };
 		5AB851481D5780850026013F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB851461D5780850026013F /* Main.storyboard */; };
@@ -46,8 +45,7 @@
 		5A38EF411D57C92B00B42C67 /* CUApiClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CUApiClientTest.swift; path = API/CUApiClientTest.swift; sourceTree = "<group>"; };
 		5A38EF431D57D6C000B42C67 /* Landscape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Landscape.swift; path = Model/Landscape.swift; sourceTree = "<group>"; };
 		5A38EF451D57D76900B42C67 /* Landscape+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Landscape+Decodable.swift"; path = "Model/JSON/Landscape+Decodable.swift"; sourceTree = "<group>"; };
-		5A38EF471D57E0F100B42C67 /* Landscapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Landscapes.swift; path = Model/Landscapes.swift; sourceTree = "<group>"; };
-		5A38EF491D57E16500B42C67 /* Landscapes+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Landscapes+Decodable.swift"; path = "Model/JSON/Landscapes+Decodable.swift"; sourceTree = "<group>"; };
+		5A71495A1D5A73D300E3F704 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageTableViewCell.swift; path = Controllers/Views/ImageTableViewCell.swift; sourceTree = "<group>"; };
 		5AB8513F1D5780850026013F /* ScratchingImageTableviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchingImageTableviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB851421D5780850026013F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AB851441D5780850026013F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 			children = (
 				5A38EF331D57B8B500B42C67 /* JSON */,
 				5A38EF431D57D6C000B42C67 /* Landscape.swift */,
-				5A38EF471D57E0F100B42C67 /* Landscapes.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -125,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				5A38EF451D57D76900B42C67 /* Landscape+Decodable.swift */,
-				5A38EF491D57E16500B42C67 /* Landscapes+Decodable.swift */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -136,6 +132,22 @@
 				5A38EF411D57C92B00B42C67 /* CUApiClientTest.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		5A7149591D5A72AA00E3F704 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A71495C1D5A73DA00E3F704 /* Views */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5A71495C1D5A73DA00E3F704 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A71495A1D5A73D300E3F704 /* ImageTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		5AB851361D5780850026013F = {
@@ -161,6 +173,7 @@
 		5AB851411D5780850026013F /* ScratchingImageTableviews */ = {
 			isa = PBXGroup;
 			children = (
+				5A7149591D5A72AA00E3F704 /* Controllers */,
 				5A38EF221D57B08100B42C67 /* Model */,
 				5A38EF211D57B06C00B42C67 /* API */,
 				5AB851421D5780850026013F /* AppDelegate.swift */,
@@ -394,14 +407,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AB851451D5780850026013F /* ViewController.swift in Sources */,
+				5A71495B1D5A73D300E3F704 /* ImageTableViewCell.swift in Sources */,
 				5A38EF281D57B64400B42C67 /* CUFixerApiClient.swift in Sources */,
 				5A38EF441D57D6C000B42C67 /* Landscape.swift in Sources */,
-				5A38EF481D57E0F100B42C67 /* Landscapes.swift in Sources */,
 				5A38EF461D57D76900B42C67 /* Landscape+Decodable.swift in Sources */,
 				5A38EF261D57B64400B42C67 /* CUApiClient.swift in Sources */,
 				5A38EF271D57B64400B42C67 /* CUApiClientResult.swift in Sources */,
 				5AB851431D5780850026013F /* AppDelegate.swift in Sources */,
-				5A38EF4A1D57E16500B42C67 /* Landscapes+Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

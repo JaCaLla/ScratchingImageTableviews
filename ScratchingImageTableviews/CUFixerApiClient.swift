@@ -32,28 +32,11 @@ class CUFixerApiClient : CUApiClient {
     enum Endpoints {
         
         case Landscapes()
-        /*
-         case LatestRatesDefault()
-        case LatestRatesBase(String)
-        
-        case LatestRatesBaseDate(String,NSDate)
-        */
+
         var url: NSURL {
             let path: String
             switch self {
-               /*
-            case .LatestRatesDefault():
-                path = "/latest"
-                return NSURL(string: CUFixerApiClient.baseURL + path)!
-                
-            case .LatestRatesBase(let iso4712Code):
-                path = "/latest"
-                return NSURL(string: CUFixerApiClient.baseURL + path + "?base=" + iso4712Code)!
-                
-            case .LatestRatesBaseDate(let iso4712Code,let date):
-                path = "/"  ///+ date.YYYYMMDD
-                return NSURL(string: CUFixerApiClient.baseURL + path + "?base=" + iso4712Code)!
-                */
+
             case .Landscapes():
                 path = "/landscapes"
                 return NSURL(string: CUFixerApiClient.baseURL + path)!
@@ -70,45 +53,9 @@ class CUFixerApiClient : CUApiClient {
         let url = Endpoints.Landscapes().url
         let request = NSURLRequest(URL: url)
         fetchCollection(request, rootKey: nil, completion: completion)
-        //fetchResource(request, rootKey: "landscapes", completion: completion)
+        //fetchResource(request, rootKey: nil, completion: completion)
     }
- /*
-    func fetchLatestRates(completion: CUApiClientResult<CUDateRates> -> Void) {
-        if(!_isConnectedToNetwork()){
-            NSNotificationCenter.defaultCenter().postNotificationName(CUFixerApiClient.notNoReacheableNetwork, object: nil)
-            return
-        }
-        
-        let url = Endpoints.LatestRatesDefault().url
-        let request = NSURLRequest(URL: url)
-        fetchResource(request, rootKey: nil, completion: completion)
-    }
-    
-    func fetchLatestRates(iso4217Code:String,completion: CUApiClientResult<CUDateRates> -> Void){
-        
-        if(!_isConnectedToNetwork()){
-            NSNotificationCenter.defaultCenter().postNotificationName(CUFixerApiClient.notNoReacheableNetwork, object: nil)
-            return
-        }
-        
-        let url = Endpoints.LatestRatesBase(iso4217Code).url
-        let request = NSURLRequest(URL: url)
-        fetchResource(request, rootKey: nil, completion: completion)
-    }
-    
-    func fetchLatestRates(iso4217Code:String,date:NSDate,completion: CUApiClientResult<CUDateRates> -> Void){
-        
-        if(!_isConnectedToNetwork()){
-            NSNotificationCenter.defaultCenter().postNotificationName(CUFixerApiClient.notNoReacheableNetwork, object: nil)
-            return
-        }
-        
-        let url = Endpoints.LatestRatesBaseDate(iso4217Code,date).url
-        let request = NSURLRequest(URL: url)
-        fetchResource(request, rootKey: nil, completion: completion)
-    }
-    
-*/
+
     private func _isConnectedToNetwork() -> Bool {
         var zeroAddress = sockaddr_in()
         zeroAddress.sin_len = UInt8(sizeofValue(zeroAddress))

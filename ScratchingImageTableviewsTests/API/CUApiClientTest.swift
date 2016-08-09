@@ -29,26 +29,13 @@ class CUApiClientTest: XCTestCase {
             
             switch result {
             case .Success(let landscapes):
-                print("\(landscapes.first!.count)")
+                XCTAssert(landscapes.count==3)
                 break
             default:
                 XCTFail()
             }
         }
         
-        /*
-        apiClient.fetchLandscapes() { result in
-            expectation.fulfill()
-            
-            switch result {
-            case .Success(let landscapes):
-             print("")
-                break
-            default:
-                XCTFail()
-            }
-        }
- */
         waitForExpectationsWithTimeout(30, handler: nil)
         
     }

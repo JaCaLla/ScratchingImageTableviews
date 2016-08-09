@@ -21,6 +21,38 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uGv-Ls-e3i">
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCellId" rowHeight="320" id="1PN-HA-GBF" customClass="ImageTableViewCell" customModule="ScratchingImageTableviews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1PN-HA-GBF" id="kXa-Rs-MkP">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="319"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s3w-ly-Eaz">
+                                                    <rect key="frame" x="8" y="8" width="544" height="303"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="303" id="gGD-3i-gbA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hwU-eZ-MzE">
+                                                    <rect key="frame" x="262" y="141" width="37" height="37"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="s3w-ly-Eaz" firstAttribute="leading" secondItem="kXa-Rs-MkP" secondAttribute="leadingMargin" id="15X-fE-TG5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="s3w-ly-Eaz" secondAttribute="trailing" id="Gkp-u6-QFj"/>
+                                                <constraint firstItem="hwU-eZ-MzE" firstAttribute="centerX" secondItem="kXa-Rs-MkP" secondAttribute="centerX" id="Lss-LN-DFj"/>
+                                                <constraint firstItem="hwU-eZ-MzE" firstAttribute="centerY" secondItem="kXa-Rs-MkP" secondAttribute="centerY" id="N1s-Ad-ddK"/>
+                                                <constraint firstItem="s3w-ly-Eaz" firstAttribute="top" secondItem="kXa-Rs-MkP" secondAttribute="topMargin" id="Q8d-1k-hB2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="s3w-ly-Eaz" secondAttribute="bottom" id="eih-4Y-i7M"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imvLandscape" destination="s3w-ly-Eaz" id="Ive-Ep-Pe7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -31,6 +63,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="uGv-Ls-e3i" secondAttribute="trailing" id="ss2-Z9-6tB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="uGv-Ls-e3i" id="WeA-GB-KBS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

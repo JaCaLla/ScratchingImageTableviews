@@ -10,7 +10,7 @@ import Foundation
 import Argo
 
 public enum CUApiClientResult<T> {
-    case Success([T])
+    case Success(T)
     case Error(NSError)
     case NotFound
     case ServerError(Int)

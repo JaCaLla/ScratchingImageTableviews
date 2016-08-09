@@ -63,7 +63,7 @@ class CUApiClient {
             
             switch j {
             case .Array(let array):
-                return array.map { T.decode($0).value! }
+               return array.map { T.decode($0).value! }
                 
             default:
                 print("Response was not an array, cannot continue")
@@ -82,7 +82,7 @@ class CUApiClient {
                     switch response!.statusCode {
                     case 200:
                         if let resource = parseBlock(json!) {
-                            completion(.Success([resource]))
+                            completion(.Success(resource))
                         } else {
                             print("WARNING: Couldn't parse the following JSON as a \(T.self)")
                             print(json!)
