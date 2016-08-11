@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var apiClient: CUFixerApiClient!
@@ -21,7 +21,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         self._setup()
         
         apiClient.fetchLandscapes { [unowned self] result   in
-
+            
             switch result {
             case .Success(let landscapes):
                 dispatch_async(dispatch_get_main_queue()) {
@@ -36,16 +36,16 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-/*
- http://celeri.es/scratching_image_tableviews/IMG_2156.JPG
+    
+    /*
+     http://celeri.es/scratching_image_tableviews/IMG_2156.JPG
      http://celeri.es/scratching_image_tableviews/landscapes
- */
+     */
     
     // MARK : UITableViewDataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,18 +61,33 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         let cell = tableView.dequeueReusableCellWithIdentifier("ReusableCellId", forIndexPath: indexPath)
         
         if let cell = cell as? ImageTableViewCell,
-        let  _landscape:Landscape = self.landscapes![indexPath.row],
-           let _url = NSURL(string: _landscape.url!),
-            let _data = NSData(contentsOfURL: _url){
-        
-        
-            cell.imvLandscape.image = UIImage(data: _data)
+            let  _landscape:Landscape = self.landscapes![indexPath.row],
+            let _url = NSURL(string: _landscape.url!){
+            
+            cell.activityIndicator.hidden = false
+            cell.activityIndicator.startAnimating()
+            cell.imvLandscape.image = nil
+            cell.lblLandscape.text = _landscape.name;
+            
+            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+                // do some task
+                if let _data = NSData(contentsOfURL: _url){
+                    dispatch_async(dispatch_get_main_queue()) {
+                        // update some UI
+                        cell.activityIndicator.hidden = true
+                        cell.activityIndicator.stopAnimating()
+                        cell.imvLandscape.image = UIImage(data: _data)
+                    }
+                }
+            }
+            
         }
         
         return cell
     }
     
-
+    
     
     // MAR : UITableViewDelegate
     
