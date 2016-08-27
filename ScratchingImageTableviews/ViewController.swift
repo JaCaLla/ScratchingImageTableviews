@@ -15,6 +15,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     var apiClient: CUFixerApiClient!
     var landscapes:[Landscape]?
     
+    let cache = NSCache()
+    
+    var imageProviders = Set<ImageProvider>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -60,27 +64,21 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ReusableCellId", forIndexPath: indexPath)
         
-        if let cell = cell as? ImageTableViewCell,
-            let  _landscape:Landscape = self.landscapes![indexPath.row],
-            let _url = NSURL(string: _landscape.url!){
+        if let cell = cell as? ImageTableViewCell {
             
-            cell.activityIndicator.hidden = false
-            cell.activityIndicator.startAnimating()
-            cell.imvLandscape.image = nil
-            cell.lblLandscape.text = _landscape.name;
-            
-            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-            dispatch_async(dispatch_get_global_queue(priority, 0)) {
-                // do some task
-                if let _data = NSData(contentsOfURL: _url){
-                    dispatch_async(dispatch_get_main_queue()) {
-                        // update some UI
-                        cell.activityIndicator.hidden = true
-                        cell.activityIndicator.stopAnimating()
-                        cell.imvLandscape.image = UIImage(data: _data)
-                    }
+            let landscape:Landscape = self.landscapes![indexPath.row]
+            /*
+            if let cachedVersion:UIImage = cache.objectForKey(landscape.url) as? UIImage {
+                NSOperationQueue.mainQueue().addOperationWithBlock {
+                    cell.imvLandscape.image = cachedVersion
+                    cell.lblLandscape.text = landscape.name
                 }
-            }
+            } else {*/
+                
+                cell.landscape = self.landscapes![indexPath.row]
+           // }
+            
+            
             
         }
         
@@ -88,6 +86,53 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     
+     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        guard let cell = cell as? ImageTableViewCell else { return }
+        
+        let landscape:Landscape = landscapes![indexPath.row]
+        
+        guard cache.objectForKey(landscape.url) != nil  else {
+            
+            let imageProvider = ImageProvider(landscape: landscapes![indexPath.row] ) {
+                image in
+                NSOperationQueue.mainQueue().addOperationWithBlock {
+                    
+                    self.cache.setObject(image!, forKey: landscape.url)
+                    
+                    if(self._isVisible(indexPath, tableView: tableView)){
+                        cell.updateImageViewWithImage(image)
+                    }
+                    
+                    
+                    
+                }
+                
+                return
+            }
+            imageProviders.insert(imageProvider)
+            return
+        }
+       
+        
+NSOperationQueue.mainQueue().addOperationWithBlock {
+         //   cell.imvLandscape.image = self.cache.objectForKey(landscape.url) as? UIImage
+         //   cell.lblLandscape.text = landscape.name
+    
+    let image:UIImage = self.cache.objectForKey(landscape.url) as! UIImage
+            cell.updateImageViewWithImage(image)
+        }
+ 
+
+    }
+  /*
+     func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        guard let cell = cell as? ImageTableViewCell else { return }
+        for provider in imageProviders.filter({ $0.landscape == cell.landscape }) {
+            provider.cancel()
+            imageProviders.remove(provider)
+        }
+    }
+    */
     
     // MAR : UITableViewDelegate
     
@@ -105,6 +150,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     func _refresh(){
         self.tableView.reloadData()
+    }
+    
+    func _isVisible(indexpath:NSIndexPath, tableView:UITableView) ->Bool{
+        if let _ =  tableView.indexPathsForVisibleRows!.filter({$0.row == indexpath.row}).first {
+            return true
+        }
+        return false
     }
 }
 

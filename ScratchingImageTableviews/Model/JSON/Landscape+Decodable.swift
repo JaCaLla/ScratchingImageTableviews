@@ -14,9 +14,7 @@ extension Landscape : Decodable {
     typealias DecodedType = Landscape
     
     static func decode(json: JSON) -> Decoded<Landscape> {
-        let landscape = Landscape()
-        landscape.name = (json <| "name").value
-        landscape.url = (json <| "url").value
+        let landscape = Landscape(name: (json <| "name").value!, url:(json <| "url").value!)
         
         return .Success(landscape)
     }

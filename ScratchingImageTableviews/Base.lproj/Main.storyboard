@@ -31,13 +31,12 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s3w-ly-Eaz">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="318"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="318" id="LrV-mZ-1pq"/>
                                                     </constraints>
                                                 </imageView>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="RWB-xh-rUB">
-                                                    <rect key="frame" x="282" y="141" width="37" height="37"/>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="RWB-xh-rUB">
+                                                    <rect key="frame" x="283" y="140" width="37" height="37"/>
                                                 </activityIndicatorView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTE-Ky-Hth">
                                                     <rect key="frame" x="8" y="290" width="584" height="21"/>
@@ -49,6 +48,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="HTE-Ky-Hth" firstAttribute="leading" secondItem="kXa-Rs-MkP" secondAttribute="leadingMargin" id="4nd-Yy-9gO"/>
                                                 <constraint firstItem="s3w-ly-Eaz" firstAttribute="leading" secondItem="kXa-Rs-MkP" secondAttribute="leading" id="Orq-tg-qt0"/>

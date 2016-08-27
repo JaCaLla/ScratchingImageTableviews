@@ -8,7 +8,13 @@
 
 import Foundation
 
-class Landscape {
-    var name:String?
-    var url:String?
+struct Landscape {
+    var name:String
+    var url:String
+}
+
+extension Landscape: Equatable { }
+
+func ==(lhs: Landscape, rhs: Landscape) -> Bool {
+    return lhs.name == rhs.name && lhs.url == rhs.url
 }
