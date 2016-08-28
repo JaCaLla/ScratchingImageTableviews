@@ -15,19 +15,18 @@ class ImageProvider{
       private let operationQueue = NSOperationQueue()
     
     
-    init(landscape:Landscape, completion:(UIImage?) -> ()){
+    init(landscape:Landscape, width:CGFloat, completion:(UIImage?) -> ()){
         self.landscape = landscape
         
         if let _url =  NSURL(string: self.landscape.url){
             // Create the separate operations
-            let dataLoad = DataLoadOperation(url:_url)
-            let imageThumbnalizer = ImageThumbnalizerOperation(data: nil)
-            let imageOutputOp = ImageOutputOperation(image: nil, completion: completion)
-            let operations = [dataLoad,imageThumbnalizer,imageOutputOp]
+            let dataLoad = FetchImageOp(url:_url)
+            let imageThumbnalizer = ImageResizerOp(width: width,data: nil, completion: completion)
+
+            let operations = [dataLoad,imageThumbnalizer]
             
             // Add operation dependencies
-            dataLoad |> imageThumbnalizer |> imageOutputOp
-            //dataLoad |> imageDecompress |> tiltShift |> filterOutput
+            dataLoad |> imageThumbnalizer 
             
             operationQueue.addOperations(operations, waitUntilFinished: false)
         }

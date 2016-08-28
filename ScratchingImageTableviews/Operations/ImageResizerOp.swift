@@ -12,13 +12,15 @@ protocol ImageThumbnalizerOperationDataProvider {
     var compressedData: NSData? { get }
 }
 
-class ImageThumbnalizerOperation: NSOperation {
+class ImageResizerOp: NSOperation {
     
     private let inputData: NSData?
     private let completion: ((UIImage?) -> ())?
     private var outputImage: UIImage?
+    private let newWidth: CGFloat
     
-    init(data: NSData?, completion: ((UIImage?) -> ())? = nil) {
+    init(width:CGFloat, data: NSData?, completion: ((UIImage?) -> ())? = nil) {
+        newWidth=width
         inputData = data
         self.completion = completion
         super.init()
@@ -40,16 +42,8 @@ class ImageThumbnalizerOperation: NSOperation {
         guard let data = compressedData else { return }
         
         let inputImage = UIImage(data: data)!
-        outputImage = resizeImage(inputImage, newWidth: 1242)
+        outputImage = resizeImage(inputImage, newWidth: newWidth)
         completion?(outputImage)
-        
-  /*
-        if let decompressedData = Compressor.decompressData(data) {
-            outputImage = UIImage(data: decompressedData)
-        }
-        
-        completion?(outputImage)
- */
         
         
     }
@@ -68,8 +62,6 @@ class ImageThumbnalizerOperation: NSOperation {
     
 }
 
-extension ImageThumbnalizerOperation: ImageOutputOperationDataProvider {
-    var inputImage: UIImage? { return outputImage }
-}
+
 
  

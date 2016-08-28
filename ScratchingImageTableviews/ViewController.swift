@@ -65,35 +65,21 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         let cell = tableView.dequeueReusableCellWithIdentifier("ReusableCellId", forIndexPath: indexPath)
         
         if let cell = cell as? ImageTableViewCell {
-            
-            let landscape:Landscape = self.landscapes![indexPath.row]
-            /*
-            if let cachedVersion:UIImage = cache.objectForKey(landscape.url) as? UIImage {
-                NSOperationQueue.mainQueue().addOperationWithBlock {
-                    cell.imvLandscape.image = cachedVersion
-                    cell.lblLandscape.text = landscape.name
-                }
-            } else {*/
-                
-                cell.landscape = self.landscapes![indexPath.row]
-           // }
-            
-            
-            
+            cell.landscape = self.landscapes![indexPath.row]
         }
         
         return cell
     }
     
     
-     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath){
         guard let cell = cell as? ImageTableViewCell else { return }
         
         let landscape:Landscape = landscapes![indexPath.row]
         
         guard cache.objectForKey(landscape.url) != nil  else {
             
-            let imageProvider = ImageProvider(landscape: landscapes![indexPath.row] ) {
+            let imageProvider = ImageProvider( landscape: landscapes![indexPath.row],width: cell.imvLandscape.frame.size.width*2 ) {
                 image in
                 NSOperationQueue.mainQueue().addOperationWithBlock {
                     
@@ -102,9 +88,6 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                     if(self._isVisible(indexPath, tableView: tableView)){
                         cell.updateImageViewWithImage(image)
                     }
-                    
-                    
-                    
                 }
                 
                 return
@@ -112,27 +95,22 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             imageProviders.insert(imageProvider)
             return
         }
-       
         
-NSOperationQueue.mainQueue().addOperationWithBlock {
-         //   cell.imvLandscape.image = self.cache.objectForKey(landscape.url) as? UIImage
-         //   cell.lblLandscape.text = landscape.name
-    
-    let image:UIImage = self.cache.objectForKey(landscape.url) as! UIImage
-            cell.updateImageViewWithImage(image)
-        }
- 
-
+        let image:UIImage = self.cache.objectForKey(landscape.url) as! UIImage
+        cell.updateImageViewWithImage(image)
     }
-  /*
-     func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    
+    
+    
+    
+    func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         guard let cell = cell as? ImageTableViewCell else { return }
         for provider in imageProviders.filter({ $0.landscape == cell.landscape }) {
             provider.cancel()
             imageProviders.remove(provider)
         }
     }
-    */
+    
     
     // MAR : UITableViewDelegate
     

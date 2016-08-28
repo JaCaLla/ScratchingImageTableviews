@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DataLoadOperation: ConcurrentOperation {
+class FetchImageOp: ConcurrentOperation {
     
     private let url: NSURL
     private let completion: ((NSData?) -> ())?
@@ -21,14 +21,7 @@ class DataLoadOperation: ConcurrentOperation {
     }
     
     override func main() {
-        /*
-        NetworkSimulator.asyncLoadDataAtURL(url) {
-            data in
-            self.loadedData = data
-            self.completion?(data)
-            self.state = .Finished
-        }
- */
+
         if let _data = NSData(contentsOfURL: url){
             self.loadedData = _data
             self.completion?(_data)
@@ -39,7 +32,7 @@ class DataLoadOperation: ConcurrentOperation {
     }
 }
 
-extension DataLoadOperation: ImageThumbnalizerOperationDataProvider {
+extension FetchImageOp: ImageThumbnalizerOperationDataProvider {
     var compressedData: NSData? { return loadedData }
 }
 
